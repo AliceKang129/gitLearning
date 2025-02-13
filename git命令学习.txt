@@ -1,0 +1,22 @@
+
+ 获取远程分支，切换到branch2
+git fetch origin
+git checkout branch2
+
+每次看到的就是分支里的内容
+
+创建远程分支
+1、从本地推送到远程
+如果你有一个名为feature-x的本地分支，并想将其推送到远程仓库
+git push origin 分支名
+git push origin feature-x
+
+2、直接在远程创建新分支
+git push origin HEAD:new-branch-name
+
+3、查看远程分支
+git branch -r
+
+4、切换到远程分支
+要切换到远程分支的本地副本（如果本地还没有这个分支），你可以使用：
+git checkout -b 本地分支名 origin/远程分支名
